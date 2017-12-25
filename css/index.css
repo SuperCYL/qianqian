@@ -1,0 +1,392 @@
+/* 初始化样式 */
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    font-family: "PingFangSC-Regular";
+    font-size: 62.5%;
+    color: #333;
+}
+ul > li{
+    list-style: none;
+}
+/* 取消chrome下默认的文本框聚焦样式 */
+input，textarea{
+    outline:none
+} 
+img{
+    width:100%;
+    border:0;
+    vertical-align:middle
+} 
+.clearbox {
+    zoom:1;
+}    /*==for IE6/7 Maxthon2==*/
+.clearbox:after {
+   clear:both;
+   content:'.';
+   display:block;
+   width: 0;
+   height: 0;
+   visibility:hidden;
+}
+/* 头部 */
+.header{
+    width:100%;
+    height:60px;
+    position: fixed;
+    top:0;
+    z-index: 99;
+}
+.bg{
+    width:100%;
+    background-image: url(../img/bg.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 2s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+        opacity: 50%; /*中间状态 透明度为50*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+.bgtext{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+}
+.bgtit{
+    font-size: 3.5em;
+    color:#fff;
+}
+.btn{
+    width:127.5px;
+    line-height:48px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 4.5px;
+    margin:0 auto;
+    font-size: 1.5em;
+    color: #14161a;
+}
+.seritem{
+    width:100%;
+    background: #fff;
+    position: fixed;
+    top:60px;
+    left:0;
+    right:0;
+    z-index: 99;
+    padding-bottom: 22.5px;
+    display: none;
+}
+.seritem ul li{
+    font-size:1.5em;
+    color: #333;
+    margin-top:22.5px;
+    text-align: center;
+}
+.premark{
+    width:50%;
+    font-size: 1.5em;
+    margin:27px auto 29.5px;
+    color:rgba(255, 255, 255, 0.65);
+}
+.icon{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.header .logo{
+    width:112px;
+    height:22.5px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.logow{
+    background-image: url(../img/logow.png);
+}
+.logoh{
+    background-image: url(../img/logoh.png);
+}
+.header .more{
+    width:21px;
+    height:19px;
+    position: absolute;
+    right:10px;
+    top:20px;
+}
+.morew{
+    background-image: url(../img/morew.png);
+}
+.moreh{
+    background-image: url(../img/moreh.png);
+}
+.hactive{
+    background:#fff;
+    border-bottom:1px solid #ececec;
+}
+/* 内容 */
+.content{
+    width:100%;
+    text-align: center;
+}
+.typecont,.casecont,.aboutus,.brand,.contact{
+    width:100%;
+    height: auto;
+    text-align: center;
+}
+.typecont ul li{
+    width:50%;
+    float: left;
+}
+.typecont ul li .icon{
+    margin-top:20px;
+}
+
+.gray{
+    background: #e2e2e2;
+}
+.typecont .app{
+    background-image: url(../img/app.png);
+}
+.typetit{
+    font-size: 1.8em;
+    position: relative;
+    padding: 11px 0 8.5px 0;
+}
+.typetit::after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    margin-left: -29.9px;
+    bottom: 0;
+    width: 59.8px;
+    height: 1px;
+    background-image: url(../img/line.png);
+}
+.typetext{
+    font-size: 1em;
+    color: #666666;
+    padding: 12px 5px 0 5px;
+}
+.typecont .icon{
+    width:45px;
+    height:37.5px;
+}
+.wx{
+    background-image: url(../img/wx.png);
+}
+.ec{
+    background-image: url(../img/shop.png);
+}
+.pc{
+    background-image: url(../img/pc.png);
+}
+.do{
+    background-image: url(../img/do.png);
+}
+.user{
+    background-image: url(../img/user.png);
+}
+.casecont ul{
+    width:98%;
+    margin:0 auto;
+}
+.casecont ul li{
+    float: left;
+    width:49.5%;
+}
+.casecont ul li:nth-child(2n){
+    float: right;
+}
+.casecont .casespacing{
+    padding:5px;
+    box-shadow: 1px 1px 5px #e2e2e2;
+}
+.casespacing img{
+    width:100%;
+}
+.casetit{
+    width:79px;
+    height:57px;
+    background-image: url(../img/case.png);
+    margin:30px auto 10px;
+}
+.abouttit{
+    width:69.5px;
+    height:57px;
+    background-image: url(../img/about.png);
+    margin:30px auto 10px;
+}
+.aboutcont,.brandcont,.contactcont{
+    width:95%;
+    margin:0 auto;
+}
+.aboutus img{
+    display: block;
+}
+.aboutus p,.brand p{
+    text-align: left;
+    margin-top:24px;
+    font-size: 1.4em;
+    color:#333;
+    letter-spacing:1px;
+    line-height: 18px;
+}
+.brandtit{
+    width:69.5px;
+    height:57px;
+    background-image: url(../img/brand.png);
+    margin:30px auto 10px;
+}
+h6{
+    text-align: left;
+    margin-top:10px;
+}
+.branditm{
+    margin-top:5px!important;
+}
+.contacttit{
+    width:69.5px;
+    height:57px;
+    background-image: url(../img/contact.png);
+    margin:30px auto 10px;
+}
+.contact p{
+    text-align: left;
+    font-size: 1.5em;
+    line-height: 25px;
+}
+.code{
+    width:215px;
+    height:215px;
+    background-image: url(../img/code.png);
+}
+/* 尾部 */
+.footer{
+    width:100%;
+    line-height:60px;
+    color:#999;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top:30px;
+}
+
+/* 屏幕适配 */
+@media (max-width: 320px) {
+    body{
+        font-size: 50%;
+    }
+}
+@media(min-width: 414px){
+    .typecont ul li .icon{
+        margin-top:40px;
+    }
+}
+@media (min-width: 768px) {
+    body{
+        font-size: 100%;
+    }
+    .typecont ul li .icon{
+        width:90px;
+        height: 75px;
+        margin-top:100px;
+    }
+    .typetit{
+        font-size:2.2em;
+    }
+    .typetext{
+        font-size: 1.5em;
+    }
+}
+
+/* 动画 */
+.typestyle{
+    -webkit-animation-name: tli; /*动画名称*/
+    -webkit-animation-duration: 5s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+@-webkit-keyframes tli {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+        opacity: 50%; /*中间状态 透明度为50*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+@keyframes bounce {
+    from, 20%, 53%, 80%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      transform: translate3d(0,0,0);
+    }
+  
+    40%, 43% {
+      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      transform: translate3d(0, 125px, 0);
+    }
+  
+    70% {
+      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0,-4px,0);
+    }
+  }
+  
+  .bounce {
+    animation-name: bounce;
+    transform-origin: center bottom;
+    -webkit-animation-name: bounce; /*动画名称*/
+    -webkit-animation-duration: 2s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+  }
+
+  @keyframes bounce2 {
+    from, 20%, 53%, 80%, to {
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      transform: translate3d(0,0,0);
+    }
+  
+    40%, 43% {
+      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      transform: translate3d(0, 250px, 0);
+    }
+  
+    70% {
+      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0,-4px,0);
+    }
+  }
+  
+  .bounce2 {
+    animation-name: bounce2;
+    transform-origin: center bottom;
+    -webkit-animation-name: bounce; /*动画名称*/
+    -webkit-animation-duration: 2s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 1s; /*延迟时间*/
+  }
